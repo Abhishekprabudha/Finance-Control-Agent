@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AIonOS Agentic FinOps Mission Control for Uber</title>
+  <meta name="description" content="Front-end-only agentic FinOps mission control demo for Uber India Finance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">A</div>
+      <div>
+        <div class="eyebrow">AIonOS × Uber</div>
+        <h1>Agentic FinOps</h1>
+      </div>
+    </div>
+    <nav id="nav" class="nav"></nav>
+    <div class="demo-panel">
+      <div class="toggle-row">
+        <div>
+          <strong>Demo Mode</strong>
+          <span id="demo-caption">Live simulation running</span>
+        </div>
+        <label class="switch">
+          <input id="demo-toggle" type="checkbox" checked />
+          <span></span>
+        </label>
+      </div>
+      <button id="reset-state" class="ghost-button full">Reset localStorage</button>
+    </div>
+  </aside>
+
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Front-end-only demo · Synthetic data · Reproducible audit JSON</div>
+        <h2 id="screen-title">Executive Mission Control</h2>
+      </div>
+      <div class="top-actions">
+        <button data-scenario="Month-End Close" class="action-button">Run Month-End Close Simulation</button>
+        <button data-scenario="Payment Mismatch Spike" class="action-button warn">Trigger Payment Exception Spike</button>
+        <button data-scenario="Revenue Leakage Detection" class="action-button danger">Detect Revenue Leakage</button>
+        <button id="generate-narrative" class="action-button alt">Generate CFO Narrative</button>
+      </div>
+    </header>
+
+    <section id="app" class="app"></section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
