@@ -1,0 +1,562 @@
+[
+  {
+    "case_id": "RA-20260618-025",
+    "case_type": "Unapplied cash",
+    "city": "Delhi NCR",
+    "product_line": "Auto",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 2494452.08,
+    "risk_score": 63,
+    "detected_at": "2026-06-18T08:48:00+05:30",
+    "status": "Closed",
+    "owner": "O2C Ops",
+    "sla_hours_remaining": 48,
+    "root_cause": "Wallet refund created after settlement close",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-1",
+      "TRIP-EVENT-DELTA-12",
+      "CONTRACT-RULE-1"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-005",
+    "case_type": "Unapplied cash",
+    "city": "Hyderabad",
+    "product_line": "Rentals",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 2401704.17,
+    "risk_score": 77,
+    "detected_at": "2026-06-18T06:28:00+05:30",
+    "status": "Closed",
+    "owner": "Revenue Accounting",
+    "sla_hours_remaining": 15,
+    "root_cause": "Usage API batch failed",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-5",
+      "TRIP-EVENT-DELTA-5",
+      "CONTRACT-RULE-5"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-011",
+    "case_type": "Unapplied cash",
+    "city": "Mumbai",
+    "product_line": "Rentals",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 2357859.97,
+    "risk_score": 63,
+    "detected_at": "2026-06-18T07:12:00+05:30",
+    "status": "Investigating",
+    "owner": "Revenue Accounting",
+    "sla_hours_remaining": 14,
+    "root_cause": "Wallet refund created after settlement close",
+    "recommended_action": "Post revenue true-up JE",
+    "evidence_refs": [
+      "BILLING-BATCH-5",
+      "TRIP-EVENT-DELTA-11",
+      "CONTRACT-RULE-3"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-004",
+    "case_type": "Incorrect surge fee recognition",
+    "city": "Mumbai",
+    "product_line": "Premier",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 2302087.96,
+    "risk_score": 97,
+    "detected_at": "2026-06-18T06:23:00+05:30",
+    "status": "Owner assigned",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 54,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-4",
+      "TRIP-EVENT-DELTA-4",
+      "CONTRACT-RULE-4"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-015",
+    "case_type": "Contract-to-invoice mismatch",
+    "city": "Mumbai",
+    "product_line": "Rentals",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 2271076.29,
+    "risk_score": 68,
+    "detected_at": "2026-06-18T07:39:00+05:30",
+    "status": "Owner assigned",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 38,
+    "root_cause": "Usage API batch failed",
+    "recommended_action": "Post revenue true-up JE",
+    "evidence_refs": [
+      "BILLING-BATCH-3",
+      "TRIP-EVENT-DELTA-2",
+      "CONTRACT-RULE-7"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-007",
+    "case_type": "Missing billing event",
+    "city": "Hyderabad",
+    "product_line": "Premier",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 2245920.78,
+    "risk_score": 75,
+    "detected_at": "2026-06-18T06:42:00+05:30",
+    "status": "New",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 8,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-1",
+      "TRIP-EVENT-DELTA-7",
+      "CONTRACT-RULE-7"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-024",
+    "case_type": "Incorrect surge fee recognition",
+    "city": "Hyderabad",
+    "product_line": "Moto",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 1888650.06,
+    "risk_score": 83,
+    "detected_at": "2026-06-18T08:44:00+05:30",
+    "status": "Closed",
+    "owner": "FP&A",
+    "sla_hours_remaining": 68,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-6",
+      "TRIP-EVENT-DELTA-11",
+      "CONTRACT-RULE-8"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-009",
+    "case_type": "Incorrect surge fee recognition",
+    "city": "Pune",
+    "product_line": "Moto",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 1720039.44,
+    "risk_score": 63,
+    "detected_at": "2026-06-18T06:58:00+05:30",
+    "status": "New",
+    "owner": "Revenue Accounting",
+    "sla_hours_remaining": 59,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Create recovery invoice",
+    "evidence_refs": [
+      "BILLING-BATCH-3",
+      "TRIP-EVENT-DELTA-9",
+      "CONTRACT-RULE-1"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-017",
+    "case_type": "Contract-to-invoice mismatch",
+    "city": "Ahmedabad",
+    "product_line": "UberGo",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 1519042.45,
+    "risk_score": 77,
+    "detected_at": "2026-06-18T07:52:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 52,
+    "root_cause": "Wallet refund created after settlement close",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-5",
+      "TRIP-EVENT-DELTA-4",
+      "CONTRACT-RULE-1"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-028",
+    "case_type": "Usage capture gap",
+    "city": "Kolkata",
+    "product_line": "Moto",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 1417863.35,
+    "risk_score": 83,
+    "detected_at": "2026-06-18T09:10:00+05:30",
+    "status": "Investigating",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 54,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-4",
+      "TRIP-EVENT-DELTA-2",
+      "CONTRACT-RULE-4"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-003",
+    "case_type": "Missing billing event",
+    "city": "Bengaluru",
+    "product_line": "Intercity",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 1417219.2,
+    "risk_score": 92,
+    "detected_at": "2026-06-18T06:16:00+05:30",
+    "status": "New",
+    "owner": "FP&A",
+    "sla_hours_remaining": 59,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Create recovery invoice",
+    "evidence_refs": [
+      "BILLING-BATCH-3",
+      "TRIP-EVENT-DELTA-3",
+      "CONTRACT-RULE-3"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-022",
+    "case_type": "Airport fee pass-through gap",
+    "city": "Kolkata",
+    "product_line": "Intercity",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 1375497.27,
+    "risk_score": 81,
+    "detected_at": "2026-06-18T08:27:00+05:30",
+    "status": "New",
+    "owner": "O2C Ops",
+    "sla_hours_remaining": 49,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-4",
+      "TRIP-EVENT-DELTA-9",
+      "CONTRACT-RULE-6"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-026",
+    "case_type": "Contract-to-invoice mismatch",
+    "city": "Ahmedabad",
+    "product_line": "Auto",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 1184628.31,
+    "risk_score": 64,
+    "detected_at": "2026-06-18T08:58:00+05:30",
+    "status": "Closed",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 44,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-2",
+      "TRIP-EVENT-DELTA-13",
+      "CONTRACT-RULE-2"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-012",
+    "case_type": "Airport fee pass-through gap",
+    "city": "Mumbai",
+    "product_line": "Rentals",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 1002699.98,
+    "risk_score": 78,
+    "detected_at": "2026-06-18T07:19:00+05:30",
+    "status": "New",
+    "owner": "Revenue Accounting",
+    "sla_hours_remaining": 4,
+    "root_cause": "Wallet refund created after settlement close",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-6",
+      "TRIP-EVENT-DELTA-12",
+      "CONTRACT-RULE-4"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-006",
+    "case_type": "Unapplied cash",
+    "city": "Bengaluru",
+    "product_line": "Rentals",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 995864.51,
+    "risk_score": 68,
+    "detected_at": "2026-06-18T06:35:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 46,
+    "root_cause": "Manual override created missing tax code",
+    "recommended_action": "Create recovery invoice",
+    "evidence_refs": [
+      "BILLING-BATCH-6",
+      "TRIP-EVENT-DELTA-6",
+      "CONTRACT-RULE-6"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-013",
+    "case_type": "Usage capture gap",
+    "city": "Delhi NCR",
+    "product_line": "Premier",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 954200.76,
+    "risk_score": 69,
+    "detected_at": "2026-06-18T07:27:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "FP&A",
+    "sla_hours_remaining": 69,
+    "root_cause": "Usage API batch failed",
+    "recommended_action": "Create recovery invoice",
+    "evidence_refs": [
+      "BILLING-BATCH-1",
+      "TRIP-EVENT-DELTA-13",
+      "CONTRACT-RULE-5"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-010",
+    "case_type": "Airport fee pass-through gap",
+    "city": "Kolkata",
+    "product_line": "Uber Shuttle",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 907531.48,
+    "risk_score": 59,
+    "detected_at": "2026-06-18T07:05:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 33,
+    "root_cause": "Wallet refund created after settlement close",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-4",
+      "TRIP-EVENT-DELTA-10",
+      "CONTRACT-RULE-2"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-018",
+    "case_type": "Airport fee pass-through gap",
+    "city": "Mumbai",
+    "product_line": "Auto",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 893387.98,
+    "risk_score": 96,
+    "detected_at": "2026-06-18T08:00:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 26,
+    "root_cause": "Usage API batch failed",
+    "recommended_action": "Escalate product event gap",
+    "evidence_refs": [
+      "BILLING-BATCH-6",
+      "TRIP-EVENT-DELTA-5",
+      "CONTRACT-RULE-2"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-019",
+    "case_type": "Partner incentive over-accrual",
+    "city": "Ahmedabad",
+    "product_line": "Intercity",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 788847.29,
+    "risk_score": 78,
+    "detected_at": "2026-06-18T08:09:00+05:30",
+    "status": "Owner assigned",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 50,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-1",
+      "TRIP-EVENT-DELTA-6",
+      "CONTRACT-RULE-3"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-020",
+    "case_type": "Incorrect surge fee recognition",
+    "city": "Mumbai",
+    "product_line": "Rentals",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 567517.12,
+    "risk_score": 87,
+    "detected_at": "2026-06-18T08:14:00+05:30",
+    "status": "Recovery in progress",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 12,
+    "root_cause": "Usage API batch failed",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-2",
+      "TRIP-EVENT-DELTA-7",
+      "CONTRACT-RULE-4"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-021",
+    "case_type": "Usage capture gap",
+    "city": "Hyderabad",
+    "product_line": "Auto",
+    "entity": "Uber India Technology Pvt Ltd",
+    "financial_impact_inr": 421117.58,
+    "risk_score": 85,
+    "detected_at": "2026-06-18T08:23:00+05:30",
+    "status": "New",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 65,
+    "root_cause": "Manual override created missing tax code",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-3",
+      "TRIP-EVENT-DELTA-8",
+      "CONTRACT-RULE-5"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-016",
+    "case_type": "Unapplied cash",
+    "city": "Chennai",
+    "product_line": "Moto",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 237790.17,
+    "risk_score": 88,
+    "detected_at": "2026-06-18T07:45:00+05:30",
+    "status": "Owner assigned",
+    "owner": "City Finance Partner",
+    "sla_hours_remaining": 35,
+    "root_cause": "Cancellation fee excluded from billing run",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-4",
+      "TRIP-EVENT-DELTA-3",
+      "CONTRACT-RULE-8"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-027",
+    "case_type": "Partner incentive over-accrual",
+    "city": "Delhi NCR",
+    "product_line": "UberGo",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 192909.57,
+    "risk_score": 99,
+    "detected_at": "2026-06-18T09:02:00+05:30",
+    "status": "Closed",
+    "owner": "O2C Ops",
+    "sla_hours_remaining": 35,
+    "root_cause": "Manual override created missing tax code",
+    "recommended_action": "Post revenue true-up JE",
+    "evidence_refs": [
+      "BILLING-BATCH-3",
+      "TRIP-EVENT-DELTA-1",
+      "CONTRACT-RULE-3"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-023",
+    "case_type": "Partner incentive over-accrual",
+    "city": "Kolkata",
+    "product_line": "Uber Shuttle",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 191976.51,
+    "risk_score": 85,
+    "detected_at": "2026-06-18T08:34:00+05:30",
+    "status": "New",
+    "owner": "Revenue Accounting",
+    "sla_hours_remaining": 37,
+    "root_cause": "Invoice rate not aligned to contract term",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-5",
+      "TRIP-EVENT-DELTA-10",
+      "CONTRACT-RULE-7"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-001",
+    "case_type": "Airport fee pass-through gap",
+    "city": "Delhi NCR",
+    "product_line": "Uber Shuttle",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 166684.37,
+    "risk_score": 58,
+    "detected_at": "2026-06-18T06:03:00+05:30",
+    "status": "Investigating",
+    "owner": "O2C Ops",
+    "sla_hours_remaining": 12,
+    "root_cause": "Cancellation fee excluded from billing run",
+    "recommended_action": "Post revenue true-up JE",
+    "evidence_refs": [
+      "BILLING-BATCH-1",
+      "TRIP-EVENT-DELTA-1",
+      "CONTRACT-RULE-1"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-014",
+    "case_type": "Usage capture gap",
+    "city": "Delhi NCR",
+    "product_line": "Intercity",
+    "entity": "Uber Support Services India",
+    "financial_impact_inr": 148422.5,
+    "risk_score": 82,
+    "detected_at": "2026-06-18T07:31:00+05:30",
+    "status": "Owner assigned",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 53,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-2",
+      "TRIP-EVENT-DELTA-1",
+      "CONTRACT-RULE-6"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-008",
+    "case_type": "Contract-to-invoice mismatch",
+    "city": "Mumbai",
+    "product_line": "Uber Shuttle",
+    "entity": "Uber BV - India IC",
+    "financial_impact_inr": 122814.3,
+    "risk_score": 62,
+    "detected_at": "2026-06-18T06:51:00+05:30",
+    "status": "Investigating",
+    "owner": "FP&A",
+    "sla_hours_remaining": 34,
+    "root_cause": "Manual override created missing tax code",
+    "recommended_action": "Correct contract rule mapping",
+    "evidence_refs": [
+      "BILLING-BATCH-2",
+      "TRIP-EVENT-DELTA-8",
+      "CONTRACT-RULE-8"
+    ]
+  },
+  {
+    "case_id": "RA-20260618-002",
+    "case_type": "Incorrect surge fee recognition",
+    "city": "Ahmedabad",
+    "product_line": "Auto",
+    "entity": "Uber India Systems Pvt Ltd",
+    "financial_impact_inr": 107076.63,
+    "risk_score": 97,
+    "detected_at": "2026-06-18T06:10:00+05:30",
+    "status": "Closed",
+    "owner": "Billing Ops",
+    "sla_hours_remaining": 6,
+    "root_cause": "Delayed trip event capture",
+    "recommended_action": "Hold close sign-off until evidence attached",
+    "evidence_refs": [
+      "BILLING-BATCH-2",
+      "TRIP-EVENT-DELTA-2",
+      "CONTRACT-RULE-2"
+    ]
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "audit_id": "AUD-20260618-00001",
+    "timestamp": "2026-06-18T06:00:00+05:30",
+    "agent": "Payment & Reconciliation Agent",
+    "source_event_id": "FE-20260618-0001",
+    "decision": "Created evidence pack",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.8,
+    "financial_impact_inr": 6015.48,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "RAZ-BEN-000",
+      "TB-BEN-REN-202606-00",
+      "POLICY-001"
+    ],
+    "trace_hash": "trace-774208853036"
+  },
+  {
+    "audit_id": "AUD-20260618-00002",
+    "timestamp": "2026-06-18T06:09:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0002",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.76,
+    "financial_impact_inr": 609326.62,
+    "policy_guardrail": "Payment match confidence",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-BEN-001",
+      "TB-BEN-INT-202606-01",
+      "POLICY-002"
+    ],
+    "trace_hash": "trace-833663396749"
+  },
+  {
+    "audit_id": "AUD-20260618-00003",
+    "timestamp": "2026-06-18T06:16:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0003",
+    "decision": "Created evidence pack",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.86,
+    "financial_impact_inr": 324488.39,
+    "policy_guardrail": "Close SLA rule",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "STR-PUN-002",
+      "TB-PUN-UBE-202606-02",
+      "POLICY-003"
+    ],
+    "trace_hash": "trace-170506639732"
+  },
+  {
+    "audit_id": "AUD-20260618-00004",
+    "timestamp": "2026-06-18T06:21:00+05:30",
+    "agent": "CFO Performance Agent",
+    "source_event_id": "FE-20260618-0004",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.85,
+    "financial_impact_inr": 752920.36,
+    "policy_guardrail": "Close SLA rule",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "BAN-CHE-003",
+      "TB-CHE-UBE-202606-03",
+      "POLICY-004"
+    ],
+    "trace_hash": "trace-140612549379"
+  },
+  {
+    "audit_id": "AUD-20260618-00005",
+    "timestamp": "2026-06-18T06:28:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0005",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 737841.96,
+    "policy_guardrail": "Materiality threshold",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "RAZ-CHE-004",
+      "TB-CHE-MOT-202606-04",
+      "POLICY-005"
+    ],
+    "trace_hash": "trace-080970811324"
+  },
+  {
+    "audit_id": "AUD-20260618-00006",
+    "timestamp": "2026-06-18T06:37:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0006",
+    "decision": "Matched record",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.79,
+    "financial_impact_inr": 196618.24,
+    "policy_guardrail": "GST/TDS compliance",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "STR-PUN-005",
+      "TB-PUN-UBE-202606-05",
+      "POLICY-006"
+    ],
+    "trace_hash": "trace-573508998428"
+  },
+  {
+    "audit_id": "AUD-20260618-00007",
+    "timestamp": "2026-06-18T06:45:00+05:30",
+    "agent": "IC & GL Ops Agent",
+    "source_event_id": "FE-20260618-0007",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.97,
+    "financial_impact_inr": 337798.04,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-HYD-006",
+      "TB-HYD-REN-202606-06",
+      "POLICY-007"
+    ],
+    "trace_hash": "trace-934354917575"
+  },
+  {
+    "audit_id": "AUD-20260618-00008",
+    "timestamp": "2026-06-18T06:51:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0008",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 365597.67,
+    "policy_guardrail": "Payment match confidence",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "BAN-CHE-007",
+      "TB-CHE-REN-202606-07",
+      "POLICY-008"
+    ],
+    "trace_hash": "trace-001537896562"
+  },
+  {
+    "audit_id": "AUD-20260618-00009",
+    "timestamp": "2026-06-18T06:59:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0009",
+    "decision": "Assigned owner",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.79,
+    "financial_impact_inr": 17834.73,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "PAY-MUM-008",
+      "TB-MUM-REN-202606-08",
+      "POLICY-001"
+    ],
+    "trace_hash": "trace-957344279220"
+  },
+  {
+    "audit_id": "AUD-20260618-00010",
+    "timestamp": "2026-06-18T07:06:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0010",
+    "decision": "Assigned owner",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.87,
+    "financial_impact_inr": 97040.47,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "RAZ-CHE-009",
+      "TB-CHE-UBE-202606-09",
+      "POLICY-002"
+    ],
+    "trace_hash": "trace-088236601343"
+  },
+  {
+    "audit_id": "AUD-20260618-00011",
+    "timestamp": "2026-06-18T07:10:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0011",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.94,
+    "financial_impact_inr": 6571.74,
+    "policy_guardrail": "GST/TDS compliance",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "BAN-CHE-010",
+      "TB-CHE-UBE-202606-10",
+      "POLICY-003"
+    ],
+    "trace_hash": "trace-095379553679"
+  },
+  {
+    "audit_id": "AUD-20260618-00012",
+    "timestamp": "2026-06-18T07:20:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0012",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.8,
+    "financial_impact_inr": 746613.14,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-HYD-011",
+      "TB-HYD-UBE-202606-11",
+      "POLICY-004"
+    ],
+    "trace_hash": "trace-662344307523"
+  },
+  {
+    "audit_id": "AUD-20260618-00013",
+    "timestamp": "2026-06-18T07:26:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0013",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.78,
+    "financial_impact_inr": 642587.25,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "BAN-KOL-012",
+      "TB-KOL-PRE-202606-12",
+      "POLICY-005"
+    ],
+    "trace_hash": "trace-721296641182"
+  },
+  {
+    "audit_id": "AUD-20260618-00014",
+    "timestamp": "2026-06-18T07:31:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0014",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 471948.49,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "BAN-PUN-013",
+      "TB-PUN-UBE-202606-13",
+      "POLICY-006"
+    ],
+    "trace_hash": "trace-808079550565"
+  },
+  {
+    "audit_id": "AUD-20260618-00015",
+    "timestamp": "2026-06-18T07:39:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0015",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.88,
+    "financial_impact_inr": 238509.48,
+    "policy_guardrail": "Payment match confidence",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "PAY-DEL-014",
+      "TB-DEL-INT-202606-14",
+      "POLICY-007"
+    ],
+    "trace_hash": "trace-055992210755"
+  },
+  {
+    "audit_id": "AUD-20260618-00016",
+    "timestamp": "2026-06-18T07:45:00+05:30",
+    "agent": "IC & GL Ops Agent",
+    "source_event_id": "FE-20260618-0016",
+    "decision": "Created evidence pack",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.79,
+    "financial_impact_inr": 36305.65,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-KOL-015",
+      "TB-KOL-AUT-202606-15",
+      "POLICY-008"
+    ],
+    "trace_hash": "trace-508682406886"
+  },
+  {
+    "audit_id": "AUD-20260618-00017",
+    "timestamp": "2026-06-18T07:55:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0017",
+    "decision": "Flagged exception",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.82,
+    "financial_impact_inr": 121304.5,
+    "policy_guardrail": "GST/TDS compliance",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-HYD-016",
+      "TB-HYD-INT-202606-16",
+      "POLICY-001"
+    ],
+    "trace_hash": "trace-500149469207"
+  },
+  {
+    "audit_id": "AUD-20260618-00018",
+    "timestamp": "2026-06-18T08:02:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0018",
+    "decision": "Created evidence pack",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.82,
+    "financial_impact_inr": 414080.85,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-HYD-000",
+      "TB-HYD-PRE-202606-17",
+      "POLICY-002"
+    ],
+    "trace_hash": "trace-975030477878"
+  },
+  {
+    "audit_id": "AUD-20260618-00019",
+    "timestamp": "2026-06-18T08:09:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0019",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.83,
+    "financial_impact_inr": 592861.3,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "UPI-AHM-001",
+      "TB-AHM-AUT-202606-18",
+      "POLICY-003"
+    ],
+    "trace_hash": "trace-815757595172"
+  },
+  {
+    "audit_id": "AUD-20260618-00020",
+    "timestamp": "2026-06-18T08:14:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0020",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 50947.57,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "RAZ-BEN-002",
+      "TB-BEN-REN-202606-19",
+      "POLICY-004"
+    ],
+    "trace_hash": "trace-320969142229"
+  },
+  {
+    "audit_id": "AUD-20260618-00021",
+    "timestamp": "2026-06-18T08:20:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0021",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.83,
+    "financial_impact_inr": 800502.72,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "STR-HYD-003",
+      "TB-HYD-MOT-202606-20",
+      "POLICY-005"
+    ],
+    "trace_hash": "trace-817308852274"
+  },
+  {
+    "audit_id": "AUD-20260618-00022",
+    "timestamp": "2026-06-18T08:27:00+05:30",
+    "agent": "CFO Performance Agent",
+    "source_event_id": "FE-20260618-0022",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 571757.46,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-CHE-004",
+      "TB-CHE-MOT-202606-21",
+      "POLICY-006"
+    ],
+    "trace_hash": "trace-639193263031"
+  },
+  {
+    "audit_id": "AUD-20260618-00023",
+    "timestamp": "2026-06-18T08:35:00+05:30",
+    "agent": "CFO Performance Agent",
+    "source_event_id": "FE-20260618-0023",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.86,
+    "financial_impact_inr": 749032.39,
+    "policy_guardrail": "Payment match confidence",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "RAZ-CHE-005",
+      "TB-CHE-PRE-202606-22",
+      "POLICY-007"
+    ],
+    "trace_hash": "trace-923711419093"
+  },
+  {
+    "audit_id": "AUD-20260618-00024",
+    "timestamp": "2026-06-18T08:43:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0024",
+    "decision": "Created evidence pack",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.81,
+    "financial_impact_inr": 31227.87,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "STR-MUM-006",
+      "TB-MUM-AUT-202606-23",
+      "POLICY-008"
+    ],
+    "trace_hash": "trace-547808712525"
+  },
+  {
+    "audit_id": "AUD-20260618-00025",
+    "timestamp": "2026-06-18T08:49:00+05:30",
+    "agent": "IC & GL Ops Agent",
+    "source_event_id": "FE-20260618-0025",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.78,
+    "financial_impact_inr": 705372.51,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "UPI-BEN-007",
+      "TB-BEN-UBE-202606-24",
+      "POLICY-001"
+    ],
+    "trace_hash": "trace-698612407644"
+  },
+  {
+    "audit_id": "AUD-20260618-00026",
+    "timestamp": "2026-06-18T08:56:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0026",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.9,
+    "financial_impact_inr": 35082.76,
+    "policy_guardrail": "Close SLA rule",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "PAY-DEL-008",
+      "TB-DEL-REN-202606-25",
+      "POLICY-002"
+    ],
+    "trace_hash": "trace-515071937416"
+  },
+  {
+    "audit_id": "AUD-20260618-00027",
+    "timestamp": "2026-06-18T09:03:00+05:30",
+    "agent": "Payment & Reconciliation Agent",
+    "source_event_id": "FE-20260618-0027",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.8,
+    "financial_impact_inr": 735095.64,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-HYD-009",
+      "TB-HYD-REN-202606-26",
+      "POLICY-003"
+    ],
+    "trace_hash": "trace-150414662630"
+  },
+  {
+    "audit_id": "AUD-20260618-00028",
+    "timestamp": "2026-06-18T09:09:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0028",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.95,
+    "financial_impact_inr": 228617.84,
+    "policy_guardrail": "Materiality threshold",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "PAY-KOL-010",
+      "TB-KOL-UBE-202606-27",
+      "POLICY-004"
+    ],
+    "trace_hash": "trace-043405217514"
+  },
+  {
+    "audit_id": "AUD-20260618-00029",
+    "timestamp": "2026-06-18T09:18:00+05:30",
+    "agent": "Payment & Reconciliation Agent",
+    "source_event_id": "FE-20260618-0029",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.88,
+    "financial_impact_inr": 1263557.24,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-PUN-011",
+      "TB-PUN-AUT-202606-28",
+      "POLICY-005"
+    ],
+    "trace_hash": "trace-593502018923"
+  },
+  {
+    "audit_id": "AUD-20260618-00030",
+    "timestamp": "2026-06-18T09:25:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0030",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.91,
+    "financial_impact_inr": 34922.97,
+    "policy_guardrail": "Revenue completeness",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "RAZ-MUM-012",
+      "TB-MUM-INT-202606-00",
+      "POLICY-006"
+    ],
+    "trace_hash": "trace-523846784806"
+  },
+  {
+    "audit_id": "AUD-20260618-00031",
+    "timestamp": "2026-06-18T09:31:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0031",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.97,
+    "financial_impact_inr": 3933.36,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-BEN-013",
+      "TB-BEN-REN-202606-01",
+      "POLICY-007"
+    ],
+    "trace_hash": "trace-522687126307"
+  },
+  {
+    "audit_id": "AUD-20260618-00032",
+    "timestamp": "2026-06-18T09:38:00+05:30",
+    "agent": "CFO Performance Agent",
+    "source_event_id": "FE-20260618-0032",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.93,
+    "financial_impact_inr": 278940.01,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-CHE-014",
+      "TB-CHE-REN-202606-02",
+      "POLICY-008"
+    ],
+    "trace_hash": "trace-948286101603"
+  },
+  {
+    "audit_id": "AUD-20260618-00033",
+    "timestamp": "2026-06-18T09:46:00+05:30",
+    "agent": "CFO Performance Agent",
+    "source_event_id": "FE-20260618-0033",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.95,
+    "financial_impact_inr": 180629.83,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "RAZ-BEN-015",
+      "TB-BEN-AUT-202606-03",
+      "POLICY-001"
+    ],
+    "trace_hash": "trace-218973441182"
+  },
+  {
+    "audit_id": "AUD-20260618-00034",
+    "timestamp": "2026-06-18T09:52:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0034",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.88,
+    "financial_impact_inr": 565116.13,
+    "policy_guardrail": "Materiality threshold",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "BAN-DEL-016",
+      "TB-DEL-AUT-202606-04",
+      "POLICY-002"
+    ],
+    "trace_hash": "trace-482964239582"
+  },
+  {
+    "audit_id": "AUD-20260618-00035",
+    "timestamp": "2026-06-18T09:59:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0035",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.88,
+    "financial_impact_inr": 722652.7,
+    "policy_guardrail": "Materiality threshold",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "BAN-HYD-000",
+      "TB-HYD-MOT-202606-05",
+      "POLICY-003"
+    ],
+    "trace_hash": "trace-976126624386"
+  },
+  {
+    "audit_id": "AUD-20260618-00036",
+    "timestamp": "2026-06-18T10:08:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0036",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Autonomous",
+    "confidence": 0.93,
+    "financial_impact_inr": 33807.87,
+    "policy_guardrail": "GST/TDS compliance",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "UPI-DEL-001",
+      "TB-DEL-UBE-202606-06",
+      "POLICY-004"
+    ],
+    "trace_hash": "trace-336600478418"
+  },
+  {
+    "audit_id": "AUD-20260618-00037",
+    "timestamp": "2026-06-18T10:15:00+05:30",
+    "agent": "Journal Entry Agent",
+    "source_event_id": "FE-20260618-0037",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.8,
+    "financial_impact_inr": 521722.84,
+    "policy_guardrail": "GST/TDS compliance",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "UPI-PUN-002",
+      "TB-PUN-UBE-202606-07",
+      "POLICY-005"
+    ],
+    "trace_hash": "trace-247048939364"
+  },
+  {
+    "audit_id": "AUD-20260618-00038",
+    "timestamp": "2026-06-18T10:20:00+05:30",
+    "agent": "Financial Close Agent",
+    "source_event_id": "FE-20260618-0038",
+    "decision": "Auto-posted JE",
+    "autonomy_mode": "Human-on-loop",
+    "confidence": 0.93,
+    "financial_impact_inr": 235221.34,
+    "policy_guardrail": "CoA validation",
+    "approval_status": "Not required",
+    "evidence_refs": [
+      "PAY-AHM-003",
+      "TB-AHM-REN-202606-08",
+      "POLICY-006"
+    ],
+    "trace_hash": "trace-614460483032"
+  },
+  {
+    "audit_id": "AUD-20260618-00039",
+    "timestamp": "2026-06-18T10:28:00+05:30",
+    "agent": "Governance Agent",
+    "source_event_id": "FE-20260618-0039",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.87,
+    "financial_impact_inr": 601190.22,
+    "policy_guardrail": "Duplicate JE test",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "PAY-KOL-004",
+      "TB-KOL-REN-202606-09",
+      "POLICY-007"
+    ],
+    "trace_hash": "trace-570111053565"
+  },
+  {
+    "audit_id": "AUD-20260618-00040",
+    "timestamp": "2026-06-18T10:36:00+05:30",
+    "agent": "Revenue Assurance Agent",
+    "source_event_id": "FE-20260618-0040",
+    "decision": "Routed for approval",
+    "autonomy_mode": "Human-in-loop",
+    "confidence": 0.79,
+    "financial_impact_inr": 135170.74,
+    "policy_guardrail": "Payment match confidence",
+    "approval_status": "Pending",
+    "evidence_refs": [
+      "BAN-BEN-005",
+      "TB-BEN-UBE-202606-10",
+      "POLICY-008"
+    ],
+    "trace_hash": "trace-927469384425"
+  }
+]

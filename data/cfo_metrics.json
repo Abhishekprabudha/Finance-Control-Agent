@@ -1,0 +1,95 @@
+{
+  "period": "June 2026 MTD",
+  "baseline": {
+    "days_to_close": 8.5,
+    "manual_journals": 1240,
+    "recon_stp_pct": 71,
+    "leakage_detected_inr": 0,
+    "audit_readiness_pct": 62,
+    "open_exceptions": 186
+  },
+  "current": {
+    "days_to_close": 5.1,
+    "manual_journals": 448,
+    "recon_stp_pct": 93,
+    "leakage_detected_inr": 12850000,
+    "audit_readiness_pct": 88,
+    "open_exceptions": 54
+  },
+  "forecast": {
+    "month_end_revenue_inr": 742000000,
+    "cash_collections_inr": 689000000,
+    "driver_cost_inr": 402000000,
+    "opex_inr": 155000000,
+    "variance_to_budget_pct": -2.8,
+    "forecast_confidence": 0.89
+  },
+  "city_product_variance": [
+    {
+      "city": "Bengaluru",
+      "product_line": "UberGo",
+      "actual_inr": 156000000,
+      "budget_inr": 149000000,
+      "variance_pct": 4.7,
+      "driver_cohort": "Gold partner drivers"
+    },
+    {
+      "city": "Delhi NCR",
+      "product_line": "Auto",
+      "actual_inr": 92000000,
+      "budget_inr": 101000000,
+      "variance_pct": -8.9,
+      "driver_cohort": "New drivers 0-30d"
+    },
+    {
+      "city": "Mumbai",
+      "product_line": "Premier",
+      "actual_inr": 114000000,
+      "budget_inr": 109000000,
+      "variance_pct": 4.6,
+      "driver_cohort": "Airport fleet"
+    },
+    {
+      "city": "Hyderabad",
+      "product_line": "Moto",
+      "actual_inr": 58000000,
+      "budget_inr": 63000000,
+      "variance_pct": -7.9,
+      "driver_cohort": "Reactivated drivers"
+    },
+    {
+      "city": "Chennai",
+      "product_line": "Intercity",
+      "actual_inr": 44000000,
+      "budget_inr": 39800000,
+      "variance_pct": 10.6,
+      "driver_cohort": "High surge corridors"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "action": "Move Delhi Auto incentive review into daily control room",
+      "impact_inr": 6200000,
+      "confidence": 0.86,
+      "control_evidence": "Cohort-level variance, payout batch and trip cancellation overlay"
+    },
+    {
+      "action": "Auto-recover missed airport fee pass-throughs from top 14 batches",
+      "impact_inr": 3800000,
+      "confidence": 0.91,
+      "control_evidence": "Billing batch delta and contract rule mismatch"
+    },
+    {
+      "action": "Accelerate Razorpay settlement exception closure for month-end cash view",
+      "impact_inr": 5400000,
+      "confidence": 0.88,
+      "control_evidence": "Gateway, bank and GL clearing triangulation"
+    },
+    {
+      "action": "Freeze manual JE policy exceptions until controller approval backlog clears",
+      "impact_inr": 2100000,
+      "confidence": 0.82,
+      "control_evidence": "Duplicate tests and policy override log"
+    }
+  ]
+}

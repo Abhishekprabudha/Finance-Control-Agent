@@ -1,0 +1,83 @@
+[
+  {
+    "rule_id": "JR-001",
+    "name": "Trip revenue recognition",
+    "event_type": "trip_completed",
+    "debit_gl": "113100 - Payment Gateway Clearing",
+    "credit_gl": "411000 - Mobility Revenue",
+    "tax_gl": "221100 - GST Output Liability",
+    "policy": "Auto-post when gateway event, trip event and GST code match at confidence >= 0.92",
+    "materiality_threshold_inr": 500000,
+    "autonomy": "Autonomous"
+  },
+  {
+    "rule_id": "JR-002",
+    "name": "Driver payout accrual",
+    "event_type": "driver_payout",
+    "debit_gl": "512200 - Driver Partner Cost",
+    "credit_gl": "214500 - Driver Payout Liability",
+    "policy": "Human-in-loop when payout accrual variance exceeds 2.5% or amount > \u20b95L",
+    "materiality_threshold_inr": 500000,
+    "autonomy": "Human-in-loop"
+  },
+  {
+    "rule_id": "JR-003",
+    "name": "Refund and cancellation liability",
+    "event_type": "refund_issued",
+    "debit_gl": "419500 - Refunds & Contra Revenue",
+    "credit_gl": "113100 - Payment Gateway Clearing",
+    "policy": "Auto-post refunds < \u20b950k when linked to completed customer case",
+    "materiality_threshold_inr": 50000,
+    "autonomy": "Autonomous"
+  },
+  {
+    "rule_id": "JR-004",
+    "name": "Surge incentive accrual",
+    "event_type": "surge_pricing",
+    "debit_gl": "113100 - Payment Gateway Clearing",
+    "credit_gl": "411500 - Surge Revenue",
+    "policy": "Validate city surge multiplier and trip batch before posting",
+    "materiality_threshold_inr": 300000,
+    "autonomy": "Autonomous"
+  },
+  {
+    "rule_id": "JR-005",
+    "name": "GST output and TDS withholding",
+    "event_type": "gst_output_tax",
+    "debit_gl": "113100 - Payment Gateway Clearing",
+    "credit_gl": "221100 - GST Output Liability",
+    "policy": "Validate GST state code, tax slab and invoice linkage",
+    "materiality_threshold_inr": 250000,
+    "autonomy": "Human-on-loop"
+  },
+  {
+    "rule_id": "JR-006",
+    "name": "Intercompany recharge",
+    "event_type": "intercompany_recharge",
+    "debit_gl": "136000 - IC Receivable",
+    "credit_gl": "236000 - IC Payable",
+    "policy": "Always require approver and counterparty evidence for IC recharges",
+    "materiality_threshold_inr": 1,
+    "autonomy": "Human-in-loop"
+  },
+  {
+    "rule_id": "JR-007",
+    "name": "FX remeasurement",
+    "event_type": "fx_translation",
+    "debit_gl": "676000 - FX Loss",
+    "credit_gl": "476000 - FX Gain",
+    "policy": "Route non-INR remeasurement for treasury approval when delta > \u20b92L",
+    "materiality_threshold_inr": 200000,
+    "autonomy": "Human-in-loop"
+  },
+  {
+    "rule_id": "JR-008",
+    "name": "Incentive accrual",
+    "event_type": "incentive_accrual",
+    "debit_gl": "515100 - Driver Incentives",
+    "credit_gl": "214700 - Incentive Accruals",
+    "policy": "Auto-create accrual; approval required for cohort overrides",
+    "materiality_threshold_inr": 400000,
+    "autonomy": "Human-in-loop"
+  }
+]

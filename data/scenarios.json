@@ -1,0 +1,94 @@
+[
+  {
+    "scenario_id": "SCN-MEC-001",
+    "name": "Month-End Close",
+    "description": "Compresses entity close, detects blockers, creates evidence packs, and updates CFO readiness.",
+    "duration_seconds": 42,
+    "event_types": [
+      "close_blocker",
+      "gl_subledger_tieout",
+      "driver_payout",
+      "gst_output_tax",
+      "audit_evidence"
+    ],
+    "kpi_delta": {
+      "days_to_close": -1.4,
+      "audit_readiness_pct": 7,
+      "open_exceptions": -18,
+      "manual_journals": -80
+    },
+    "script": [
+      "Create close control calendar",
+      "Parallelize tax, payouts and bank tie-outs",
+      "Escalate IC confirmation blocker",
+      "Assemble CFO sign-off evidence"
+    ]
+  },
+  {
+    "scenario_id": "SCN-PAY-002",
+    "name": "Payment Mismatch Spike",
+    "description": "Simulates a Paytm/Razorpay settlement mismatch and drives exception-only reconciliation.",
+    "duration_seconds": 36,
+    "event_types": [
+      "payment_gateway_settlement",
+      "bank_statement_credit",
+      "refund_issued"
+    ],
+    "kpi_delta": {
+      "recon_stp_pct": 4,
+      "open_exceptions": 22,
+      "audit_readiness_pct": 2
+    },
+    "script": [
+      "Spike gateway variance",
+      "Auto-match high-confidence records",
+      "Route fee split variance to treasury",
+      "Resolve exception with evidence"
+    ]
+  },
+  {
+    "scenario_id": "SCN-REV-003",
+    "name": "Revenue Leakage Detection",
+    "description": "Finds missing billing events, contract-to-invoice mismatches and usage capture gaps by value.",
+    "duration_seconds": 38,
+    "event_types": [
+      "revenue_leakage",
+      "billing_mismatch",
+      "usage_capture_gap",
+      "trip_completed"
+    ],
+    "kpi_delta": {
+      "leakage_detected_inr": 6200000,
+      "audit_readiness_pct": 3,
+      "open_exceptions": 8
+    },
+    "script": [
+      "Scan usage-to-billing delta",
+      "Score cases by impact",
+      "Assign owners and SLA",
+      "Create recovery JE/evidence"
+    ]
+  },
+  {
+    "scenario_id": "SCN-AUD-004",
+    "name": "Audit Evidence Pack",
+    "description": "Builds a reproducible JSON evidence pack across journals, recon, revenue assurance and close.",
+    "duration_seconds": 30,
+    "event_types": [
+      "audit_evidence",
+      "gl_subledger_tieout",
+      "intercompany_recharge",
+      "fx_translation"
+    ],
+    "kpi_delta": {
+      "audit_readiness_pct": 9,
+      "open_exceptions": -12
+    },
+    "script": [
+      "Collect source files",
+      "Attach policy guardrails",
+      "Link approvals and trace hashes",
+      "Export full audit pack"
+    ]
+  }
+]

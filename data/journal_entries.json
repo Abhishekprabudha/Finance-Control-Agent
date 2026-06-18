@@ -1,0 +1,1674 @@
+[
+  {
+    "je_id": "JE-IN-202606-00001",
+    "source_event_id": "FE-20260618-0001",
+    "created_at": "2026-06-18T06:00:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Bengaluru",
+    "rule_id": "JR-001",
+    "narrative": "Trip revenue recognition | Rentals | Bengaluru | TB-BEN-REN-202606-00",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 6015.48
+    },
+    "credit": {
+      "gl": "411000 - Mobility Revenue",
+      "amount_inr": 6015.48
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Review"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Review"
+      }
+    ],
+    "confidence": 0.8,
+    "risk_level": "Low",
+    "status": "Draft",
+    "approver": "Finance Controller India",
+    "evidence_refs": [
+      "EV-00001",
+      "TB-BEN-REN-202606-00",
+      "RAZ-BEN-000"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00002",
+    "source_event_id": "FE-20260618-0002",
+    "created_at": "2026-06-18T06:09:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Bengaluru",
+    "rule_id": "JR-002",
+    "narrative": "Driver payout accrual | Intercity | Bengaluru | TB-BEN-INT-202606-01",
+    "debit": {
+      "gl": "512200 - Driver Partner Cost",
+      "amount_inr": 609326.62
+    },
+    "credit": {
+      "gl": "214500 - Driver Payout Liability",
+      "amount_inr": 609326.62
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.76,
+    "risk_level": "Critical",
+    "status": "Draft",
+    "approver": "Treasury Controller",
+    "evidence_refs": [
+      "EV-00002",
+      "TB-BEN-INT-202606-01",
+      "PAY-BEN-001"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00003",
+    "source_event_id": "FE-20260618-0003",
+    "created_at": "2026-06-18T06:16:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Pune",
+    "rule_id": "JR-005",
+    "narrative": "GST output and TDS withholding | UberGo | Pune | TB-PUN-UBE-202606-02",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 324488.39
+    },
+    "credit": {
+      "gl": "221100 - GST Output Liability",
+      "amount_inr": 324488.39
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.86,
+    "risk_level": "Low",
+    "status": "Validation Hold",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00003",
+      "TB-PUN-UBE-202606-02",
+      "STR-PUN-002"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00004",
+    "source_event_id": "FE-20260618-0004",
+    "created_at": "2026-06-18T06:21:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Chennai",
+    "rule_id": "JR-004",
+    "narrative": "Surge incentive accrual | Uber Shuttle | Chennai | TB-CHE-UBE-202606-03",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 752920.36
+    },
+    "credit": {
+      "gl": "411500 - Surge Revenue",
+      "amount_inr": 752920.36
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.85,
+    "risk_level": "High",
+    "status": "Draft",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00004",
+      "TB-CHE-UBE-202606-03",
+      "BAN-CHE-003"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00005",
+    "source_event_id": "FE-20260618-0005",
+    "created_at": "2026-06-18T06:28:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Chennai",
+    "rule_id": "JR-007",
+    "narrative": "FX remeasurement | Moto | Chennai | TB-CHE-MOT-202606-04",
+    "debit": {
+      "gl": "676000 - FX Loss",
+      "amount_inr": 737841.96
+    },
+    "credit": {
+      "gl": "476000 - FX Gain",
+      "amount_inr": 737841.96
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "Critical",
+    "status": "Awaiting Approval",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00005",
+      "TB-CHE-MOT-202606-04",
+      "RAZ-CHE-004"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00006",
+    "source_event_id": "FE-20260618-0006",
+    "created_at": "2026-06-18T06:37:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Pune",
+    "rule_id": "JR-006",
+    "narrative": "Intercompany recharge | Uber Shuttle | Pune | TB-PUN-UBE-202606-05",
+    "debit": {
+      "gl": "136000 - IC Receivable",
+      "amount_inr": 196618.24
+    },
+    "credit": {
+      "gl": "236000 - IC Payable",
+      "amount_inr": 196618.24
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.79,
+    "risk_level": "Low",
+    "status": "Draft",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00006",
+      "TB-PUN-UBE-202606-05",
+      "STR-PUN-005"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00007",
+    "source_event_id": "FE-20260618-0007",
+    "created_at": "2026-06-18T06:45:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Hyderabad",
+    "rule_id": "JR-007",
+    "narrative": "FX remeasurement | Rentals | Hyderabad | TB-HYD-REN-202606-06",
+    "debit": {
+      "gl": "676000 - FX Loss",
+      "amount_inr": 337798.04
+    },
+    "credit": {
+      "gl": "476000 - FX Gain",
+      "amount_inr": 337798.04
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.97,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00007",
+      "TB-HYD-REN-202606-06",
+      "UPI-HYD-006"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00008",
+    "source_event_id": "FE-20260618-0008",
+    "created_at": "2026-06-18T06:51:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Chennai",
+    "rule_id": "JR-008",
+    "narrative": "Incentive accrual | Rentals | Chennai | TB-CHE-REN-202606-07",
+    "debit": {
+      "gl": "515100 - Driver Incentives",
+      "amount_inr": 365597.67
+    },
+    "credit": {
+      "gl": "214700 - Incentive Accruals",
+      "amount_inr": 365597.67
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00008",
+      "TB-CHE-REN-202606-07",
+      "BAN-CHE-007"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00009",
+    "source_event_id": "FE-20260618-0009",
+    "created_at": "2026-06-18T06:59:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Mumbai",
+    "rule_id": "JR-001",
+    "narrative": "Trip revenue recognition | Rentals | Mumbai | TB-MUM-REN-202606-08",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 17834.73
+    },
+    "credit": {
+      "gl": "411000 - Mobility Revenue",
+      "amount_inr": 17834.73
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.79,
+    "risk_level": "Low",
+    "status": "Draft",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00009",
+      "TB-MUM-REN-202606-08",
+      "PAY-MUM-008"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00010",
+    "source_event_id": "FE-20260618-0010",
+    "created_at": "2026-06-18T07:06:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Chennai",
+    "rule_id": "JR-002",
+    "narrative": "Driver payout accrual | Uber Shuttle | Chennai | TB-CHE-UBE-202606-09",
+    "debit": {
+      "gl": "512200 - Driver Partner Cost",
+      "amount_inr": 97040.47
+    },
+    "credit": {
+      "gl": "214500 - Driver Payout Liability",
+      "amount_inr": 97040.47
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Review"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.87,
+    "risk_level": "Low",
+    "status": "Draft",
+    "approver": "Finance Controller India",
+    "evidence_refs": [
+      "EV-00010",
+      "TB-CHE-UBE-202606-09",
+      "RAZ-CHE-009"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00011",
+    "source_event_id": "FE-20260618-0011",
+    "created_at": "2026-06-18T07:10:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Chennai",
+    "rule_id": "JR-003",
+    "narrative": "Refund and cancellation liability | Uber Shuttle | Chennai | TB-CHE-UBE-202606-10",
+    "debit": {
+      "gl": "419500 - Refunds & Contra Revenue",
+      "amount_inr": 6571.74
+    },
+    "credit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 6571.74
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.94,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00011",
+      "TB-CHE-UBE-202606-10",
+      "BAN-CHE-010"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00012",
+    "source_event_id": "FE-20260618-0012",
+    "created_at": "2026-06-18T07:20:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Hyderabad",
+    "rule_id": "JR-004",
+    "narrative": "Surge incentive accrual | UberGo | Hyderabad | TB-HYD-UBE-202606-11",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 746613.14
+    },
+    "credit": {
+      "gl": "411500 - Surge Revenue",
+      "amount_inr": 746613.14
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.8,
+    "risk_level": "Medium",
+    "status": "Draft",
+    "approver": "Finance Controller India",
+    "evidence_refs": [
+      "EV-00012",
+      "TB-HYD-UBE-202606-11",
+      "PAY-HYD-011"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00013",
+    "source_event_id": "FE-20260618-0013",
+    "created_at": "2026-06-18T07:26:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Kolkata",
+    "rule_id": "JR-005",
+    "narrative": "GST output and TDS withholding | Premier | Kolkata | TB-KOL-PRE-202606-12",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 642587.25
+    },
+    "credit": {
+      "gl": "221100 - GST Output Liability",
+      "amount_inr": 642587.25
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Review"
+      }
+    ],
+    "confidence": 0.78,
+    "risk_level": "Critical",
+    "status": "Validation Hold",
+    "approver": "Treasury Controller",
+    "evidence_refs": [
+      "EV-00013",
+      "TB-KOL-PRE-202606-12",
+      "BAN-KOL-012"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00014",
+    "source_event_id": "FE-20260618-0014",
+    "created_at": "2026-06-18T07:31:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Pune",
+    "rule_id": "JR-003",
+    "narrative": "Refund and cancellation liability | UberGo | Pune | TB-PUN-UBE-202606-13",
+    "debit": {
+      "gl": "419500 - Refunds & Contra Revenue",
+      "amount_inr": 471948.49
+    },
+    "credit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 471948.49
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00014",
+      "TB-PUN-UBE-202606-13",
+      "BAN-PUN-013"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00015",
+    "source_event_id": "FE-20260618-0015",
+    "created_at": "2026-06-18T07:39:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Delhi NCR",
+    "rule_id": "JR-007",
+    "narrative": "FX remeasurement | Intercity | Delhi NCR | TB-DEL-INT-202606-14",
+    "debit": {
+      "gl": "676000 - FX Loss",
+      "amount_inr": 238509.48
+    },
+    "credit": {
+      "gl": "476000 - FX Gain",
+      "amount_inr": 238509.48
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.88,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00015",
+      "TB-DEL-INT-202606-14",
+      "PAY-DEL-014"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00016",
+    "source_event_id": "FE-20260618-0016",
+    "created_at": "2026-06-18T07:45:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Kolkata",
+    "rule_id": "JR-008",
+    "narrative": "Incentive accrual | Auto | Kolkata | TB-KOL-AUT-202606-15",
+    "debit": {
+      "gl": "515100 - Driver Incentives",
+      "amount_inr": 36305.65
+    },
+    "credit": {
+      "gl": "214700 - Incentive Accruals",
+      "amount_inr": 36305.65
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Review"
+      }
+    ],
+    "confidence": 0.79,
+    "risk_level": "Low",
+    "status": "Awaiting Approval",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00016",
+      "TB-KOL-AUT-202606-15",
+      "UPI-KOL-015"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00017",
+    "source_event_id": "FE-20260618-0017",
+    "created_at": "2026-06-18T07:55:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Hyderabad",
+    "rule_id": "JR-005",
+    "narrative": "GST output and TDS withholding | Intercity | Hyderabad | TB-HYD-INT-202606-16",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 121304.5
+    },
+    "credit": {
+      "gl": "221100 - GST Output Liability",
+      "amount_inr": 121304.5
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.82,
+    "risk_level": "Low",
+    "status": "Draft",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00017",
+      "TB-HYD-INT-202606-16",
+      "UPI-HYD-016"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00018",
+    "source_event_id": "FE-20260618-0018",
+    "created_at": "2026-06-18T08:02:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Hyderabad",
+    "rule_id": "JR-003",
+    "narrative": "Refund and cancellation liability | Premier | Hyderabad | TB-HYD-PRE-202606-17",
+    "debit": {
+      "gl": "419500 - Refunds & Contra Revenue",
+      "amount_inr": 414080.85
+    },
+    "credit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 414080.85
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.82,
+    "risk_level": "Low",
+    "status": "Awaiting Approval",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00018",
+      "TB-HYD-PRE-202606-17",
+      "UPI-HYD-000"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00019",
+    "source_event_id": "FE-20260618-0019",
+    "created_at": "2026-06-18T08:09:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Ahmedabad",
+    "rule_id": "JR-003",
+    "narrative": "Refund and cancellation liability | Auto | Ahmedabad | TB-AHM-AUT-202606-18",
+    "debit": {
+      "gl": "419500 - Refunds & Contra Revenue",
+      "amount_inr": 592861.3
+    },
+    "credit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 592861.3
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Review"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.83,
+    "risk_level": "Critical",
+    "status": "Validation Hold",
+    "approver": "Treasury Controller",
+    "evidence_refs": [
+      "EV-00019",
+      "TB-AHM-AUT-202606-18",
+      "UPI-AHM-001"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00020",
+    "source_event_id": "FE-20260618-0020",
+    "created_at": "2026-06-18T08:14:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Bengaluru",
+    "rule_id": "JR-004",
+    "narrative": "Surge incentive accrual | Rentals | Bengaluru | TB-BEN-REN-202606-19",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 50947.57
+    },
+    "credit": {
+      "gl": "411500 - Surge Revenue",
+      "amount_inr": 50947.57
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00020",
+      "TB-BEN-REN-202606-19",
+      "RAZ-BEN-002"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00021",
+    "source_event_id": "FE-20260618-0021",
+    "created_at": "2026-06-18T08:20:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Hyderabad",
+    "rule_id": "JR-003",
+    "narrative": "Refund and cancellation liability | Moto | Hyderabad | TB-HYD-MOT-202606-20",
+    "debit": {
+      "gl": "419500 - Refunds & Contra Revenue",
+      "amount_inr": 800502.72
+    },
+    "credit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 800502.72
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.83,
+    "risk_level": "Critical",
+    "status": "Awaiting Approval",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00021",
+      "TB-HYD-MOT-202606-20",
+      "STR-HYD-003"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00022",
+    "source_event_id": "FE-20260618-0022",
+    "created_at": "2026-06-18T08:27:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Chennai",
+    "rule_id": "JR-006",
+    "narrative": "Intercompany recharge | Moto | Chennai | TB-CHE-MOT-202606-21",
+    "debit": {
+      "gl": "136000 - IC Receivable",
+      "amount_inr": 571757.46
+    },
+    "credit": {
+      "gl": "236000 - IC Payable",
+      "amount_inr": 571757.46
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "High",
+    "status": "Awaiting Approval",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00022",
+      "TB-CHE-MOT-202606-21",
+      "PAY-CHE-004"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00023",
+    "source_event_id": "FE-20260618-0023",
+    "created_at": "2026-06-18T08:35:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Chennai",
+    "rule_id": "JR-007",
+    "narrative": "FX remeasurement | Premier | Chennai | TB-CHE-PRE-202606-22",
+    "debit": {
+      "gl": "676000 - FX Loss",
+      "amount_inr": 749032.39
+    },
+    "credit": {
+      "gl": "476000 - FX Gain",
+      "amount_inr": 749032.39
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.86,
+    "risk_level": "Medium",
+    "status": "Draft",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00023",
+      "TB-CHE-PRE-202606-22",
+      "RAZ-CHE-005"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00024",
+    "source_event_id": "FE-20260618-0024",
+    "created_at": "2026-06-18T08:43:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Mumbai",
+    "rule_id": "JR-008",
+    "narrative": "Incentive accrual | Auto | Mumbai | TB-MUM-AUT-202606-23",
+    "debit": {
+      "gl": "515100 - Driver Incentives",
+      "amount_inr": 31227.87
+    },
+    "credit": {
+      "gl": "214700 - Incentive Accruals",
+      "amount_inr": 31227.87
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.81,
+    "risk_level": "Low",
+    "status": "Awaiting Approval",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00024",
+      "TB-MUM-AUT-202606-23",
+      "STR-MUM-006"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00025",
+    "source_event_id": "FE-20260618-0025",
+    "created_at": "2026-06-18T08:49:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Bengaluru",
+    "rule_id": "JR-001",
+    "narrative": "Trip revenue recognition | UberGo | Bengaluru | TB-BEN-UBE-202606-24",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 705372.51
+    },
+    "credit": {
+      "gl": "411000 - Mobility Revenue",
+      "amount_inr": 705372.51
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.78,
+    "risk_level": "Medium",
+    "status": "Validation Hold",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00025",
+      "TB-BEN-UBE-202606-24",
+      "UPI-BEN-007"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00026",
+    "source_event_id": "FE-20260618-0026",
+    "created_at": "2026-06-18T08:56:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Delhi NCR",
+    "rule_id": "JR-002",
+    "narrative": "Driver payout accrual | Rentals | Delhi NCR | TB-DEL-REN-202606-25",
+    "debit": {
+      "gl": "512200 - Driver Partner Cost",
+      "amount_inr": 35082.76
+    },
+    "credit": {
+      "gl": "214500 - Driver Payout Liability",
+      "amount_inr": 35082.76
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.9,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00026",
+      "TB-DEL-REN-202606-25",
+      "PAY-DEL-008"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00027",
+    "source_event_id": "FE-20260618-0027",
+    "created_at": "2026-06-18T09:03:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Hyderabad",
+    "rule_id": "JR-006",
+    "narrative": "Intercompany recharge | Rentals | Hyderabad | TB-HYD-REN-202606-26",
+    "debit": {
+      "gl": "136000 - IC Receivable",
+      "amount_inr": 735095.64
+    },
+    "credit": {
+      "gl": "236000 - IC Payable",
+      "amount_inr": 735095.64
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.8,
+    "risk_level": "Critical",
+    "status": "Draft",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00027",
+      "TB-HYD-REN-202606-26",
+      "PAY-HYD-009"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00028",
+    "source_event_id": "FE-20260618-0028",
+    "created_at": "2026-06-18T09:09:00+05:30",
+    "entity": "Uber India Systems Pvt Ltd",
+    "city": "Kolkata",
+    "rule_id": "JR-004",
+    "narrative": "Surge incentive accrual | Uber Shuttle | Kolkata | TB-KOL-UBE-202606-27",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 228617.84
+    },
+    "credit": {
+      "gl": "411500 - Surge Revenue",
+      "amount_inr": 228617.84
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Review"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.95,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00028",
+      "TB-KOL-UBE-202606-27",
+      "PAY-KOL-010"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00029",
+    "source_event_id": "FE-20260618-0029",
+    "created_at": "2026-06-18T09:18:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Pune",
+    "rule_id": "JR-005",
+    "narrative": "GST output and TDS withholding | Auto | Pune | TB-PUN-AUT-202606-28",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 1263557.24
+    },
+    "credit": {
+      "gl": "221100 - GST Output Liability",
+      "amount_inr": 1263557.24
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.88,
+    "risk_level": "High",
+    "status": "Awaiting Approval",
+    "approver": "Treasury Controller",
+    "evidence_refs": [
+      "EV-00029",
+      "TB-PUN-AUT-202606-28",
+      "PAY-PUN-011"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00030",
+    "source_event_id": "FE-20260618-0030",
+    "created_at": "2026-06-18T09:25:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Mumbai",
+    "rule_id": "JR-006",
+    "narrative": "Intercompany recharge | Intercity | Mumbai | TB-MUM-INT-202606-00",
+    "debit": {
+      "gl": "136000 - IC Receivable",
+      "amount_inr": 34922.97
+    },
+    "credit": {
+      "gl": "236000 - IC Payable",
+      "amount_inr": 34922.97
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.91,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00030",
+      "TB-MUM-INT-202606-00",
+      "RAZ-MUM-012"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00031",
+    "source_event_id": "FE-20260618-0031",
+    "created_at": "2026-06-18T09:31:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Bengaluru",
+    "rule_id": "JR-007",
+    "narrative": "FX remeasurement | Rentals | Bengaluru | TB-BEN-REN-202606-01",
+    "debit": {
+      "gl": "676000 - FX Loss",
+      "amount_inr": 3933.36
+    },
+    "credit": {
+      "gl": "476000 - FX Gain",
+      "amount_inr": 3933.36
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.97,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00031",
+      "TB-BEN-REN-202606-01",
+      "UPI-BEN-013"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00032",
+    "source_event_id": "FE-20260618-0032",
+    "created_at": "2026-06-18T09:38:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Chennai",
+    "rule_id": "JR-008",
+    "narrative": "Incentive accrual | Rentals | Chennai | TB-CHE-REN-202606-02",
+    "debit": {
+      "gl": "515100 - Driver Incentives",
+      "amount_inr": 278940.01
+    },
+    "credit": {
+      "gl": "214700 - Incentive Accruals",
+      "amount_inr": 278940.01
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.93,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00032",
+      "TB-CHE-REN-202606-02",
+      "UPI-CHE-014"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00033",
+    "source_event_id": "FE-20260618-0033",
+    "created_at": "2026-06-18T09:46:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Bengaluru",
+    "rule_id": "JR-001",
+    "narrative": "Trip revenue recognition | Auto | Bengaluru | TB-BEN-AUT-202606-03",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 180629.83
+    },
+    "credit": {
+      "gl": "411000 - Mobility Revenue",
+      "amount_inr": 180629.83
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.95,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00033",
+      "TB-BEN-AUT-202606-03",
+      "RAZ-BEN-015"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00034",
+    "source_event_id": "FE-20260618-0034",
+    "created_at": "2026-06-18T09:52:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Delhi NCR",
+    "rule_id": "JR-008",
+    "narrative": "Incentive accrual | Auto | Delhi NCR | TB-DEL-AUT-202606-04",
+    "debit": {
+      "gl": "515100 - Driver Incentives",
+      "amount_inr": 565116.13
+    },
+    "credit": {
+      "gl": "214700 - Incentive Accruals",
+      "amount_inr": 565116.13
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.88,
+    "risk_level": "Critical",
+    "status": "Awaiting Approval",
+    "approver": "R2R Lead",
+    "evidence_refs": [
+      "EV-00034",
+      "TB-DEL-AUT-202606-04",
+      "BAN-DEL-016"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00035",
+    "source_event_id": "FE-20260618-0035",
+    "created_at": "2026-06-18T09:59:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Hyderabad",
+    "rule_id": "JR-002",
+    "narrative": "Driver payout accrual | Moto | Hyderabad | TB-HYD-MOT-202606-05",
+    "debit": {
+      "gl": "512200 - Driver Partner Cost",
+      "amount_inr": 722652.7
+    },
+    "credit": {
+      "gl": "214500 - Driver Payout Liability",
+      "amount_inr": 722652.7
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.88,
+    "risk_level": "Medium",
+    "status": "Awaiting Approval",
+    "approver": "Treasury Controller",
+    "evidence_refs": [
+      "EV-00035",
+      "TB-HYD-MOT-202606-05",
+      "BAN-HYD-000"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00036",
+    "source_event_id": "FE-20260618-0036",
+    "created_at": "2026-06-18T10:08:00+05:30",
+    "entity": "Uber India Technology Pvt Ltd",
+    "city": "Delhi NCR",
+    "rule_id": "JR-001",
+    "narrative": "Trip revenue recognition | Uber Shuttle | Delhi NCR | TB-DEL-UBE-202606-06",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 33807.87
+    },
+    "credit": {
+      "gl": "411000 - Mobility Revenue",
+      "amount_inr": 33807.87
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.93,
+    "risk_level": "Low",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00036",
+      "TB-DEL-UBE-202606-06",
+      "UPI-DEL-001"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00037",
+    "source_event_id": "FE-20260618-0037",
+    "created_at": "2026-06-18T10:15:00+05:30",
+    "entity": "Uber BV - India IC",
+    "city": "Pune",
+    "rule_id": "JR-005",
+    "narrative": "GST output and TDS withholding | Uber Shuttle | Pune | TB-PUN-UBE-202606-07",
+    "debit": {
+      "gl": "113100 - Payment Gateway Clearing",
+      "amount_inr": 521722.84
+    },
+    "credit": {
+      "gl": "221100 - GST Output Liability",
+      "amount_inr": 521722.84
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Review"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Approval required"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Review"
+      }
+    ],
+    "confidence": 0.8,
+    "risk_level": "Critical",
+    "status": "Draft",
+    "approver": "Tax Manager",
+    "evidence_refs": [
+      "EV-00037",
+      "TB-PUN-UBE-202606-07",
+      "UPI-PUN-002"
+    ]
+  },
+  {
+    "je_id": "JE-IN-202606-00038",
+    "source_event_id": "FE-20260618-0038",
+    "created_at": "2026-06-18T10:20:00+05:30",
+    "entity": "Uber Support Services India",
+    "city": "Ahmedabad",
+    "rule_id": "JR-006",
+    "narrative": "Intercompany recharge | Rentals | Ahmedabad | TB-AHM-REN-202606-08",
+    "debit": {
+      "gl": "136000 - IC Receivable",
+      "amount_inr": 235221.34
+    },
+    "credit": {
+      "gl": "236000 - IC Payable",
+      "amount_inr": 235221.34
+    },
+    "validation_results": [
+      {
+        "check": "CoA mapping",
+        "result": "Passed"
+      },
+      {
+        "check": "Duplicate JE test",
+        "result": "Passed"
+      },
+      {
+        "check": "Materiality policy",
+        "result": "Passed"
+      },
+      {
+        "check": "GST/TDS linkage",
+        "result": "Passed"
+      }
+    ],
+    "confidence": 0.93,
+    "risk_level": "Medium",
+    "status": "Posted",
+    "approver": null,
+    "evidence_refs": [
+      "EV-00038",
+      "TB-AHM-REN-202606-08",
+      "PAY-AHM-003"
+    ]
+  }
+]
